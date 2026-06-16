@@ -1,5 +1,6 @@
 #import bcrypt
 from abc import ABC, abstractmethod
+from controladores.controlador_penalidades import ControladorPenalidades
 
 class Pessoa(ABC):
     def __init__ (self, nome, email, senha, telefone):
@@ -48,7 +49,8 @@ class Pessoa(ABC):
         #consultar todas as quadras/ginasios
         return
     
-    def consultar_penalidades(self):
-        #consultar penalidades de todas as atleticas
-        return
+    def consultar_penalidades(self, lista_atleticas):
+        # Cria o controlador passando a "base de dados" de atléticas
+        controlador = ControladorPenalidades(lista_atleticas)
 
+        controlador.processar_selecao()
