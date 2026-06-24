@@ -3,7 +3,7 @@
 class TelaAtletica:
     def tela_opcoes(self):
         print("\n" + "="*40)
-        print("    GERENCIAR ATLÉTICAS (CRUD)    ")
+        print("    GERENCIAR ATLÉTICAS    ")
         print("="*40)
         print("1 - Cadastrar Nova Atlética")
         print("2 - Listar Atléticas Cadastradas")

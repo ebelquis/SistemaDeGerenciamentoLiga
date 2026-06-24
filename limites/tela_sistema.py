@@ -38,7 +38,7 @@ class TelaSistema:
         print("="*40)
         print("1 - Avaliar Denúncias Pendentes")
         print("2 - Visualizar Disponibilidade (Cronograma)")
-        print("3 - Gerenciar Atléticas (CRUD)") 
+        print("3 - Gerenciar Atléticas") 
         print("0 - Fazer Logout")
         return self.__ler_opcao(3) 
 
