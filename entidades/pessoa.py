@@ -44,6 +44,7 @@ class Pessoa(ABC):
     def login(self, email, senha):
         if email == self.email and senha == self.senha:
             return True
+        return False
 
     def consultar_disponibilidade(self):
         #consultar todas as quadras/ginasios

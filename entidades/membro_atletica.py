@@ -2,8 +2,8 @@ from entidades.pessoa import Pessoa
 from entidades.atletica import Atletica
 
 class MembroAtletica(Pessoa):
-    def __init__(self, email, nome, senha, telefone, atletica: Atletica, cargo: str):
-        super().__init__(email, nome, senha, telefone)
+    def __init__(self, nome, email, senha, telefone, atletica: Atletica, cargo: str):
+        super().__init__(nome, email, senha, telefone)
         self.__atletica = atletica
         self.__cargo = cargo
 
